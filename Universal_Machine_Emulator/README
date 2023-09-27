@@ -1,9 +1,7 @@
 Project: Universal Machine Emulator
 Authors: Eric Zhao and Leo Kim
 
-Virtual-machine code (and by extension machine code) by writing a software 
-implementation of a simple virtual machine. We designed, documented, and 
-implemented the UM with a clean modular structure.
+Virtual-machine code (and by extension machine code) by writing a software implementation of a simple virtual machine. We designed, documented, and implemented the UM with a clean modular structure.
 
 To run: we built an executable named um that emulates a “Universal Machine”. 
 The executable takes a single argument: the pathname for a file 
@@ -25,5 +23,6 @@ The UM has these components:
 One distinguished segment is referred to by the 32-bit identifier 0 and stores the program. 
 This segment is called the 0 segment.
 
-To our knowledge, everything has been correctly implemented. If you have any questions,
+To our knowledge, everything has been correctly implemented. 
+If you have any questions,
 contact eric_duan_rui.zhao@tufts.edu or ericzhao603@gmail.com.

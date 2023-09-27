@@ -1,9 +1,13 @@
-README
-
-by Leo Kim (lkim11) and Eric Zhao (ezhao05), October 2022
 Project: Arith
+by Leo Kim (lkim11) and Eric Zhao (ezhao05), October 2022
 
-To our knowledge, everything has been correctly implemented. 
+
+• Used stepwise refinement as a style of design, build a machine that convert 
+  between full-color portable pixmap images and compressed binary image files
+• Adopt bitwise operation such as bit-packing, discard pixel information 
+  that is not easily seen by human eye, produce compressed file nearly four 
+  times smaller than the same image in PPM format
+
 
 Architecture of Solutions:
         
@@ -57,9 +61,3 @@ Architecture of Solutions:
         --------- RGB_floats.h, CV_colors.h, DCT_floats.h, DCT_ints.h ---------
         These are private struct definitions that are each used in different 
         modules.
-
-Total Time Spent: 37.5 hours
-Leo's Guess:  35 hours
-Eric's Guess: 37 hours
-
-ERIC WINS!!!!!!!!!!!!!!!
