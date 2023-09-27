@@ -1,0 +1,24 @@
+README
+
+By Eric Zhao, October 2022
+Project: Sudoku and unblackedges
+
+Program Sudoku:
+The syntax of the sudoku command is: ./sudoku [ filename ]
+where filename is the (optional) name of an input graymap file; if there is no 
+filename argument, input data is on standard input.
+
+We define correct input as a single portable graymap (i.e., pgm) file. 
+If the input is not correct, Sduoku should terminate with a checked run-time 
+error. 
+
+Otherwise, if the input is correct and if the graymap file represents a solved sudoku puzzle, 
+- Sudoku exits with a code of 0.
+- Otherwise it exits with a code of 1.
+
+
+Program Unblackedges:
+Removes black edges from a scanned image. The program takes at
+most one argument: a scanned image files.
+
+Unblackedges should print, on standard output, a plain (P1) format portable bitmap file which has width, height and pixel values identical to the original file except that all black edge pixels are changed to white.
