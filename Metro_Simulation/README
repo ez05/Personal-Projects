@@ -1,0 +1,74 @@
+/**********************************************************
+* Eric Zhao
+* Date: 10 Feb
+* Project 1: Metro Simulator
+* CS 15
+* README
+*
+*********************************************************/
+
+Compile/run:
+     - Compile using
+            make MetroSim
+     - run executable with
+            ./MetroSim stationsFile passFile [commands]
+
+
+Program Purpose:
+Phase 1: build a PassengerQueue class which represents a queue of Passenger 
+instances. PassengerQueue will later be used in building an instance of the 
+train. Moreover, each station will also utilize PassengerQueue to "store" 
+the passenger currently waiting at each respective station.
+
+Phase 2: build a MetroSim class stiumulates the actual train station and the
+train. PassengerQueue and Passenger class are used in the implementation of
+MetroSim class. The stimulation encapsulates a train, which moves between each
+station, and a list of stations, which of each contains a name, a bool value 
+that represents the position of the train, and a PassengerQueue representing 
+a list of passengers. Passengers are added to any stations and are picked 
+up when the train arrives at that station. They are dropped off when the train
+arrives at their destination.
+
+Acknowledgements: 
+- Used an external library called vector.
+- Used output stream "fstream"
+- Used input/output stream "iostream"
+
+Files: 
+
+main.cpp:
+     Main file handle simple driver functions such as reading in files, check
+     for invalid commands, and invalid files. Main.cpp creates an instance of
+     MetroSim.
+
+MetroSim.cpp:
+     Implementation of MetroSim class. Main functionality of running the Metro 
+     Simulation, should be able to move trains and deal with passengers going 
+     on/off the train. MetroSim.cpp initialises an instance of MetroSim using
+     the given input staiton files. And prints the train&station status to 
+     terminal and exiting passengers to the given output file.
+
+MetroSim.h:
+     Interface of MetroSim class.
+
+stations.txt:
+     an example file containing a list of stations.
+
+the_metroSim:
+     reference implementation for students to compare output
+
+PassengerQueue.cpp:
+     Implementation of PassengerQueue class. The class utilizes the 
+     implementation of the Passenger class to represent a list/queue
+     of Passengers.
+
+PassengerQueue.h:
+     Interface of PassengerQueue class.
+
+Passenger.cpp:
+     Implementation of Passenger class. The class represent a single 
+     passenger who has an id, the numerical value of the starting station, 
+     and the numerical value of the arriving station.
+
+Makefile:
+    Links and compiles all files.
