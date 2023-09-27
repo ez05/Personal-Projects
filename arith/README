@@ -1,0 +1,65 @@
+README
+
+by Leo Kim (lkim11) and Eric Zhao (ezhao05), October 2022
+Project: Arith
+
+To our knowledge, everything has been correctly implemented. 
+
+Architecture of Solutions:
+        
+        --------------------------- ppm_RGBfloats ---------------------------
+        The purpose of this module is to convert between a PPM file and a 
+        UArray2 of RGB float values. This module contains two public functions,
+        one that reads in a PPM file and returns UArray2 of RGB float values, 
+        and one that takes in a UArray2 of RGB float values and writes a PPM
+        file to stdout.
+
+        ---------------------------- RGBfloats_CV ----------------------------
+        The purpose of this module is to convert between a 
+        UArray2 of RGB float values and a UArray2 of CV color values. This 
+        module contains two public functions, one that takes in a UArray2 of 
+        RGB float values and returns a UArray2 of CV color values, and one that
+        takes in a UArray2 of CV color values and returns a UArray2 of RGB 
+        float values. 
+
+        ---------------------------- CV_DCTfloats ----------------------------
+        The purpose of this module is to convert between a UArray2 of CV colors
+        and a UArray2 of floats resulting from a discrete cosine 
+        transformation. This module contains two public functions, one that 
+        takes in a UArray2 of CV color values and returns a UArray2 of DCT 
+        floats values, and one that takes in a UArray2 of DCT floats values and
+        returns a UArray2 of CV color values.
+
+        -------------------------- DCTfloats_DCTints -------------------------
+        The purpose of this module is to convert between a UArray2 of DCT 
+        (discrete cosine transformation) floats and a UArray2 scaled DCT ints.
+        This module contains two public functions, one that takes in a UArray2
+        of DCT float values and returns a UArray2 of DCT scaled int values, 
+        and one that takes in a UArray2 of DCT scaled int values and returns 
+        a UArray2 of DCT float values.
+
+        -------------------------- DCTints_codewords -------------------------
+        The purpose of this module is to convert between a UArray2 of DCT 
+        (discrete cosine transformation) scaled ints and a UArray2 of bitpacked
+        codewords. This module contains two public functions, one that takes 
+        in a UArray2 of DCT scaled int values and returns a UArray2 of 
+        bitpacked codewords, and one that takes in a UArray2 of bitpacked 
+        codewords and returns a UArray2 of DCT scaled int values.
+
+        --------------------------- Codewords_file ---------------------------
+        The purpose of this module is to convert between a UArray2 of bitpacked
+        codwords and a binary file of codewords. This module contains two 
+        public functions, one that takes in a UArray2 of codewords and writes 
+        a binary file of codewords to stdout and one that reads in a binary 
+        file of codewords and returns a UArray2 of codewords.
+
+
+        --------- RGB_floats.h, CV_colors.h, DCT_floats.h, DCT_ints.h ---------
+        These are private struct definitions that are each used in different 
+        modules.
+
+Total Time Spent: 37.5 hours
+Leo's Guess:  35 hours
+Eric's Guess: 37 hours
+
+ERIC WINS!!!!!!!!!!!!!!!
