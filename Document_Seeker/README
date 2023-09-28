@@ -1,0 +1,32 @@
+******************************************************************************
+*****************************   DOCUMENT SEEKER   ****************************
+******************************************************************************
+
+Author: Eric Zhao
+Date:   July, 2023
+
+I built a word representation (i.e., TF-IDF) to look for similar documents.
+
+The main goal of this project is to generate feature representations of the 
+text (i.e., the words, meaning,semantics): represent the strings of words in a 
+sentence as feature vectors xn of common length n. The machine is able to find 
+relevant documents automatically that are similar (i.e., imagine an online
+ebook store, what we are about to build could be used to make recommendations 
+based on a user’s history or personal ratings, whether as is or an extended version).
+
+***************************
+Objectives of this project:
+***************************
+- Implement functions to encode the text data into feature vectors.
+- Use the feature representations to compare different documents, 
+  i.e., find and rank similar documents.
+- Implement and understand the use of TF, IDF, and TF-IDF in text analysis.
+
+***********************************
+Data Preparation: (Preprocess data)
+***********************************
+- Dataset: a sonnet collection of Shakespeare
+- Removing punctuation, non-English and non-text characters
+- Unifying the case (i.e., setting everything to upper- or lower-case).
+
+
